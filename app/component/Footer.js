@@ -1,13 +1,15 @@
+"use client";
+
 import React from 'react';
 import Image from 'next/image';
-import image17 from './image/image17.png';
+import imageten from './image/imageten.png';
 import Link from 'next/link';
 
 
 const Footer = () => {
     return (
         <div className='relative backgroundfooter overflow-hidden'>
-            <Image className='absolute left-0 bottom-0 w-full -z-[1]' src={image17} alt='Loading... Background'/>
+            <Image className='absolute left-0 bottom-0 w-full -z-[1]' src={imageten} layout="fill" alt='Loading... Background'/>
             <div className='container mx-auto pt-[40px] sm:pt-[48px] md:pt-[64px] lg:pt-[96px] xl:pt-[128px] 2xl:pt-[164px] pb-[14px] sm:pb-[15px] md:pb-[16px] lg:pb-[20px] xl:pb-[24px] 2xl:pb-[32px] px-[24px] sm:px-[0]'>
                 <div className='flex flex-col justify-center items-center'>
                     <div className='startchallenge text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] text-center'>Join community</div>

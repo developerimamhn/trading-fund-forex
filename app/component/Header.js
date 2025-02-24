@@ -1,4 +1,7 @@
-import React,{useEffect} from 'react';
+"use client";
+
+
+import React from 'react';
 import NavBar from './NavBar';
 import HeroArea from './HeroArea';
 import Image from 'next/image';
@@ -8,7 +11,7 @@ const Header = () => {
     
     return (
         <div className=' setbackground relative overflow-hidden pb-[24px] sm:pb-[32px] md:pb-[36px] lg:pb-[40px] xl:pb-[48px] 2xl:pb-[64px]'>
-            <Image src={image1} alt="" className='w-full h-full absolute top-0 left-0 z-[-1]'/>
+            <Image src={image1} alt="Background" objectFit="cover" className='w-full h-full absolute top-0 left-0 z-[-1]'/>
             <svg className='w-full h-full absolute animactionstar top-0 left-0' viewBox="0 0 1920 1103" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3.11696 55.3725L2.48045 56.1273L2.95125 56.953L1.98527 56.4556L0.928571 56.8235L1.56509 56.0687L1.09428 55.2431L2.06026 55.7404L3.11696 55.3725Z" fill="white" fill-opacity="0.4"/>
 <path d="M278.03 121.033L277.394 121.787L277.864 122.613L276.898 122.116L275.842 122.484L276.478 121.729L276.007 120.903L276.973 121.401L278.03 121.033Z" fill="white" fill-opacity="0.4"/>
