@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react';
 import Image from 'next/image';
-import image9 from './image/image9.png';
-import image10 from './image/image10.png';
+import image9 from '../image/image9.png';
+import image10 from '../image/image10.png';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);

@@ -5,12 +5,12 @@ import 'swiper/css/effect-cards';
 import { EffectCards,Autoplay,Pagination } from 'swiper/modules';
 import 'swiper/css/pagination';
 import Image from 'next/image';
-import image11 from './image/image11.png';
-import image12 from "./image/image12.png";
-import image13 from "./image/image13.png";
-import image14 from "./image/image14.png";
-import image15 from "./image/image15.png";
-import image16 from "./image/image16.png";
+import image11 from '../image/image11.png';
+import image12 from "../image/image12.png";
+import image13 from "../image/image13.png";
+import image14 from "../image/image14.png";
+import image15 from "../image/image15.png";
+import image16 from "../image/image16.png";
 
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
