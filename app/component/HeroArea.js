@@ -10,7 +10,7 @@ import { Autoplay } from "swiper/modules";
 import image1 from "./image4.png";
 import image2 from "./image5.png";
 import image3 from "./image6.jpg";
-import image4 from "../image/image7.png";
+import image4 from "./image7.png";
 
 const HeroArea = () => {
     const heroRef = useRef(null);
