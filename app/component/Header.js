@@ -5,7 +5,7 @@ import React from 'react';
 import NavBar from './NavBar';
 import HeroArea from './HeroArea';
 import Image from 'next/image';
-import image1 from '../image/image1.png';
+import image1 from './image1.png';
 
 const Header = () => {
     

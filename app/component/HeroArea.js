@@ -7,9 +7,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper/modules";
 
-import image1 from "../image/image4.png";
-import image2 from "../image/image5.png";
-import image3 from "../image/image6.jpg";
+import image1 from "./image4.png";
+import image2 from "./image5.png";
+import image3 from "./image6.jpg";
 import image4 from "../image/image7.png";
 
 const HeroArea = () => {
