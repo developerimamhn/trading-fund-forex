@@ -32,7 +32,7 @@ const Pagetow = () => {
 
       const buttonStylestwo = (value) =>
         `setp2section ${
-          activetow === value ? "bg-custom-gradient" : "bg-[#ffffff0a]"
+          activetow === value ? "bg-custom-gradient outline outline-2 outline-white/10" : "bg-[#ffffff0a] outline outline-2 outline-white/0"
         }`;
 
 
@@ -53,7 +53,7 @@ const Pagetow = () => {
 
 
     return (
-        <div className='backgroundimage section2' id="About">
+        <div className='backgroundimage section2' id="Account">
             <div className='container px-[24px] sm:px-[0] mx-auto py-[40px] sm:py-[48px] md:py-[64px] lg:py-[96px] xl:py-[128px] 2xl:py-[164px]'>
                 <div className='startchallenge text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] text-center'>Start Your Challenge</div>
                 <h2 className='pickandcounsize text-[24px] sm:text-[32px] md:text-[36px] lg:text-[40px] xl:text-[48px] 2xl:text-[64px] py-[13px] sm:py-[14px] md:py-[15px] lg:py-[16px] xl:py-[20px] 2xl:py-[25px]'>Pick an Account Size</h2>
@@ -176,6 +176,9 @@ const Pagetow = () => {
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='flex justify-center items-center'>
+                <button className='footerbtn text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[18px] px-[14px] sm:px-[15px] md:px-[16px] lg:px-[20px] xl:px-[24px] 2xl:px-[32px] py-[12px] sm:py-[13px] md:py-[14px] lg:py-[15px] xl:py-[16px] 2xl:py-[20px] mt-[32px] sm:mt-[36px] md:mt-[40px] lg:mt-[48px] xl:mt-[64px] 2xl:mt-[84px]'>Get Funded</button>
                 </div>
             </div>
         </div>

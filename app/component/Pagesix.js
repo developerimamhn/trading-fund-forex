@@ -20,7 +20,7 @@ const Pagesix = () => {
       }, []);
 
     return (
-        <div className='relative section5' id="Accounts">
+        <div className='relative section5' id="About">
             <div className='custombackgroundiamge absolute bottom-0 left-0 w-full h-2/6 -z-[1]'></div>
             <div className='container mx-auto py-[40px] sm:py-[48px] md:py-[64px] lg:py-[96px] xl:py-[128px] 2xl:py-[164px] px-[24px] sm:px-[0] '>
             <div className='flex justify-between items-center sm:flex-row flex-col gap-[35px] sm:gap-[50px] md:gap-[60px] lg:gap-[80px] xl:gap-[100px] 2xl:gap-[122px]'>

@@ -58,7 +58,7 @@ const Pagefive = () => {
 
     const startScrolling = () => {
       if (slider) {
-        slider.style.animation = "scroll 20s linear infinite";
+        slider.style.animation = "scroll 30s linear infinite";
       }
     };
 
@@ -83,7 +83,7 @@ const Pagefive = () => {
 
 
     return (
-        <div className='relative section4' id="Payouts">
+        <div className='relative section4' id="Account">
             <div className='custombackgroundiamge absolute bottom-0 left-0 w-full h-2/5'></div>
             <div className='container  px-[24px] sm:px-[0] mx-auto py-[40px] sm:py-[48px] md:py-[64px] lg:py-[96px] xl:py-[128px] 2xl:py-[164px]'>
                 <div className=''>
@@ -125,16 +125,26 @@ const Pagefive = () => {
                     effect={'cards'}
                     grabCursor={true}
                     speed= '1000'
-                    // autoplay={{
-                    //     delay: 3500,
-                    //     disableOnInteraction: false,
-                    //   }}
+                    autoplay={{
+                        delay: 3500,
+                        disableOnInteraction: false,
+                      }}
+                    slidesPerView={1}
+                    initialSlide={1}
+                    loopAdditionalSlides={0}
                     pagination={{
                         el: ".custom-pagination",
                         clickable: true,
                         renderBullet: (index, className) => {
                           return `<span class="${className} custom-bullet"></span>`;
                         },
+                      }}
+                      coverflowEffect={{
+                        rotate: 30,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1, 
+                        scale: 1.5,
                       }}
                       
                       
@@ -159,7 +169,7 @@ const Pagefive = () => {
                         </linearGradient>
                         </defs>
                         </svg>
-                        <p className='noteallpymensection text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] pt-[10px] sm:pt-[11px] md:pt-[12px] pb-[40px] sm:pb-[48px] md:pb-[64px] lg:pb-[96px] xl:pb-[128px] 2xl:pb-[157px] !text-[#000]'><span className='!text-[#000]'>OneStopProp's 100% profit payout is a game-changer. </span><br/> Other firms take a cut, but here, I keep everything I <br/> earn. It's the best choice for serious traders looking to <br/> maximize their returns.</p>
+                        <p className='noteallpymensection text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] pt-[10px] sm:pt-[11px] md:pt-[12px] pb-[36px] sm:pb-[40px] md:pb-[48px] lg:pb-[64px] xl:pb-[96px] 2xl:pb-[128px] !text-[#000]'><span className='!text-[#000]'>OneStopProp's 100% profit payout is a game-changer. </span><br/> Other firms take a cut, but here, I keep everything I <br/> earn. It's the best choice for serious traders looking to <br/> maximize their returns.</p>
                         <p className='noteallpymensection text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] pt-[10px] sm:pt-[11px] md:pt-[12px] pb-[11px] sm:pb-[12px] md:pb-[13px] lg:pb-[14px] xl:pb-[15px] 2xl:pb-[16px] !text-[#000]'><span className=''>Jacke L</span></p>
                         <p className='fundertrading text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] pb-[16px] sm:pb-[20px] md:pb-[24px] lg:pb-[32px] xl:pb-[36px] 2xl:pb-[40px] !text-[#000]'>Funded Trader</p>
                         <div className='linetwo !bg-white'><div className='lineorderblack'></div></div>
@@ -183,7 +193,7 @@ const Pagefive = () => {
                         </linearGradient>
                         </defs>
                         </svg>
-                        <p className='noteallpymensection text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] pt-[10px] sm:pt-[11px] md:pt-[12px] pb-[40px] sm:pb-[48px] md:pb-[64px] lg:pb-[96px] xl:pb-[128px] 2xl:pb-[157px]'><span className='!text-[#EBE3F9]'>OneStopProp's 100% profit payout is a game-changer. </span><br/> Other firms take a cut, but here, I keep everything I <br/> earn. It's the best choice for serious traders looking to <br/> maximize their returns.</p>
+                        <p className='noteallpymensection text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] pt-[10px] sm:pt-[11px] md:pt-[12px] pb-[36px] sm:pb-[40px] md:pb-[48px] lg:pb-[64px] xl:pb-[96px] 2xl:pb-[128px]'><span className='!text-[#EBE3F9]'>OneStopProp's 100% profit payout is a game-changer. </span><br/> Other firms take a cut, but here, I keep everything I <br/> earn. It's the best choice for serious traders looking to <br/> maximize their returns.</p>
                         <p className='noteallpymensection text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] pt-[10px] sm:pt-[11px] md:pt-[12px] pb-[11px] sm:pb-[12px] md:pb-[13px] lg:pb-[14px] xl:pb-[15px] 2xl:pb-[16px]'><span className='!text-[#FEFFFF]'>Jacke L</span></p>
                         <p className='fundertrading text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] pb-[16px] sm:pb-[20px] md:pb-[24px] lg:pb-[32px] xl:pb-[36px] 2xl:pb-[40px]'>Funded Trader</p>
                         <div className='linetwo'><div className='lineorder'></div></div>
@@ -208,7 +218,7 @@ const Pagefive = () => {
                         </linearGradient>
                         </defs>
                         </svg>
-                        <p className='noteallpymensection text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] pt-[10px] sm:pt-[11px] md:pt-[12px] pb-[40px] sm:pb-[48px] md:pb-[64px] lg:pb-[96px] xl:pb-[128px] 2xl:pb-[157px]'><span className='!text-[#EBE3F9]'>OneStopProp's 100% profit payout is a game-changer. </span><br/> Other firms take a cut, but here, I keep everything I <br/> earn. It's the best choice for serious traders looking to <br/> maximize their returns.</p>
+                        <p className='noteallpymensection text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] pt-[10px] sm:pt-[11px] md:pt-[12px] pb-[36px] sm:pb-[40px] md:pb-[48px] lg:pb-[64px] xl:pb-[96px] 2xl:pb-[128px]'><span className='!text-[#EBE3F9]'>OneStopProp's 100% profit payout is a game-changer. </span><br/> Other firms take a cut, but here, I keep everything I <br/> earn. It's the best choice for serious traders looking to <br/> maximize their returns.</p>
                         <p className='noteallpymensection text-[13px] sm:text-[14px] md:text-[15px] lg:text-[16px] xl:text-[20px] 2xl:text-[24px] pt-[10px] sm:pt-[11px] md:pt-[12px] pb-[11px] sm:pb-[12px] md:pb-[13px] lg:pb-[14px] xl:pb-[15px] 2xl:pb-[16px]'><span className='!text-[#FEFFFF]'>Jacke L</span></p>
                         <p className='fundertrading text-[12px] sm:text-[13px] md:text-[14px] lg:text-[15px] xl:text-[16px] 2xl:text-[20px] pb-[16px] sm:pb-[20px] md:pb-[24px] lg:pb-[32px] xl:pb-[36px] 2xl:pb-[40px]'>Funded Trader</p>
                         <div className='linetwo'><div className='lineorder'></div></div>

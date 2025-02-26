@@ -63,6 +63,7 @@ body {
   }
   .Link-manu-bar-btn:hover{
     background: var(--CTA, linear-gradient(97deg, #AB8EF8 0%, #3942FF 50%, #3C7DDE 100%));
+    outline: 2px solid rgba(255, 255, 255, 0.30);
   }
   .Link-manu-bar-btn{
     color: #fff;
@@ -73,6 +74,7 @@ body {
     border-radius: clamp(5px, 2vh, 8px);
     border: 1px solid rgba(255, 255, 255, 0.30);
     background: rgba(255, 255, 255, 0.00);
+    outline: 2px solid rgba(255, 255, 255, 0);
     padding: clamp(14px, 2vh, 20px) clamp(16px, 2vh, 32px);
     transition: 0.5s;
   }
@@ -312,6 +314,7 @@ body {
   }
   .setp2section:hover{
     background: linear-gradient(97deg, #AB8EF8 0%, #3942FF 50%, #3C7DDE 100%);
+    outline: 2px solid rgba(255, 255, 255, 0.10);
   }
   .poisizingsection{
     border-radius: 16px;
@@ -500,22 +503,62 @@ body {
     transition: background 0.4s ease, padding 0.4s ease;
     opacity: 0;
     animation: slideUp 0.6s 2.4s ease forwards;
-}
+ }
 
-/* Background change when scrolled */
-.header.scrolled {
-    background: #020818; /* Dark background */
-}
+  /* Background change when scrolled */
+  .header.scrolled {
+      background: #020818; /* Dark background */
+  }
 
-/* Slide-up animation */
-@keyframes slideUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
+  /* Slide-up animation */
+  @keyframes slideUp {
+      to {
+          opacity: 1;
+          transform: translateY(0);
+      }
+  }
+
+
+
+  @keyframes infinite-scroll {
+    from {
+      transform: translateX(0);
     }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .scroll-container {
+    display: flex;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    overflow: hidden; 
+  }
+  
+  .scroll-content {
+    display: flex;
+    gap: 20px; /* Adjust spacing between images */
+    animation: infinite-scroll 60s linear infinite; /* Adjust speed */
+    width: max-content;
+  }
+  
 }
 
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .custom-pagination .swiper-pagination-bullet-active {
@@ -602,7 +645,7 @@ body {
     font-weight: 500;
     line-height: normal;
     border-radius: 8px;
-    border: 2px solid rgba(255, 255, 255, 0.10);
+    outline: 2px solid rgba(255, 255, 255, 0.10);
     background: linear-gradient(97deg, #AB8EF8 0%, #3942FF 50%, #3C7DDE 100%);
     transition: 0.5s;
   }

@@ -24,8 +24,8 @@ const Pagethree = () => {
     return (
         <div className='trasingviewsectionbackground relative overflow-hidden py-[40px] sm:py-[48px] md:py-[64px] lg:py-[96px] xl:py-[128px] 2xl:py-[164px] ' id="Competitions">
             <Image className='w-full absolute top-0 left-0 h-auto object-cover -z-[1]' src={image9} alt='Loading...'/>
-            <div className='flex flex-col sm:flex-row justify-center items-center gap-[25px] xl:gap-[32px] px-[24px] sm:px-[0] container mx-auto px-[24px] sm:px-[32px] md:px-[36px] lg:px-[40px] xl:px-[48px] 2xl:px-[64px] section3'>
-                <div className='flex-1 selectaround'>
+            <div className='flex flex-col sm:flex-row justify-center items-center gap-[25px] xl:gap-[32px] px-[24px] sm:px-[0] container mx-auto px-[24px] sm:px-[32px] md:px-[36px] lg:px-[40px] xl:px-[48px] 2xl:px-[64px] section3 px-[24px] sm:px-[32px] md:px-[36px] lg:px-[40px] xl:px-[48px] 2xl:px-[55px]'>
+                <div className='flex-1 selectaround '>
                     <div className='relative p-[11px] sm:p-[12px] md:p-[13px] lg:p-[14px] xl:p-[15px] 2xl:p-[16px]'>
                        <Image className='w-full object-cover' src={image10} alt='Loading...'/>
                     </div>

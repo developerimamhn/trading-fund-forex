@@ -12,6 +12,24 @@ import image2 from "./image5.png";
 import image3 from "./image6.jpg";
 import image4 from "./image7.png";
 
+const images = [
+    { src: image1, caption: "Image 1" },
+    { src: image2, caption: "Image 2" },
+    { src: image1, caption: "Image 3" },
+    { src: image4, caption: "Image 4" },
+    { src: image1, caption: "Image 1" },
+    { src: image2, caption: "Image 2" },
+    { src: image1, caption: "Image 3" },
+    { src: image4, caption: "Image 4" },
+    { src: image1, caption: "Image 1" },
+    { src: image2, caption: "Image 2" },
+    { src: image1, caption: "Image 3" },
+    { src: image4, caption: "Image 4" },
+  ];
+
+
+
+
 const HeroArea = () => {
     const heroRef = useRef(null);
     const textRef = useRef(null);
@@ -19,7 +37,6 @@ const HeroArea = () => {
     const swiperRef = useRef(null);
 
     useEffect(() => {
-        // Hero section fade-in
         gsap.from(heroRef.current, {
             opacity: 0,
             y: 50,
@@ -27,7 +44,6 @@ const HeroArea = () => {
             ease: "power3.out",
         });
 
-        // Text animation
         gsap.from(textRef.current, {
             opacity: 0,
             y: 20,
@@ -36,7 +52,6 @@ const HeroArea = () => {
             ease: "power3.out",
         });
 
-        // Button animation
         gsap.from(buttonRef.current, {
             opacity: 0,
             scale: 0.8,
@@ -45,7 +60,6 @@ const HeroArea = () => {
             ease: "power3.out",
         });
 
-        // Swiper animation
         gsap.from(swiperRef.current, {
             opacity: 0,
             y: 30,
@@ -56,9 +70,34 @@ const HeroArea = () => {
 
     }, []);
 
+
+    useEffect(() => {
+        setTimeout(() => {
+          document.querySelectorAll(".swiper-slide-shadow").forEach(el => el.remove());
+        },);
+      }, []);
+
+      const sliderRef = useRef(null);
+
+  useEffect(() => {
+    const slider = sliderRef.current;
+    let animationId;
+
+    const startScrolling = () => {
+      if (slider) {
+        slider.style.animation = "scroll 20s linear infinite";
+      }
+    };
+
+    startScrolling();
+
+    return () => cancelAnimationFrame(animationId);
+  }, []);
+
+
     return (
         <div ref={heroRef} className="relative">
-            <div className="container px-[24px] sm:px-[0] mx-auto mt-[66px] sm:mt-[88px] md:mt-[114px] lg:mt-[150px] xl:mt-[210px] 2xl:mt-[276px]">
+            <div className="container overflow-hidden px-[24px] sm:px-[0] mx-auto mt-[66px] sm:mt-[88px] md:mt-[114px] lg:mt-[150px] xl:mt-[210px] 2xl:mt-[276px]">
                 <div ref={textRef}>
                     <span className="cheers">Cheers to a profitable 2025! </span><span>🚀</span>
                     <h2 className="forexstockas mt-[8px] md:mt-[12px] xl:mt-[16px]">
@@ -80,8 +119,9 @@ const HeroArea = () => {
                     <p className="recentverified text-[11px] sm:text-[12px] md:text-[13px] lg:text-[14px] xl:text-[15px] 2xl:text-[16px]">
                         Recent Verified Payouts 💰
                     </p>
-                    <div ref={swiperRef} className="relative mt-[13px] sm:mt-[14px] md:mt-[15px] lg:mt-[16px] xl:mt-[20px] 2xl:mt-[24px]">
-                        <div className="custom-box overflow-hidden hidden xl:block"></div>
+                    <div ref={swiperRef} className="relative mt-[13px] sm:mt-[14px] md:mt-[15px] lg:mt-[16px] xl:mt-[20px]  2xl:mt-[24px]">
+                        <div className="custom-box overflow-hidden hidden 2xl:block"></div>
+                        <div className='2xl:hidden block'>
                         <Swiper
                             breakpoints={{
                                 640: { slidesPerView: 1, spaceBetween: 10 },
@@ -95,7 +135,7 @@ const HeroArea = () => {
                             }}
                             modules={[Autoplay]}
                             loop={true}
-                            className="mySwiper w-full fill-white"
+                            className="mySwiper w-full fill-white "
                         >
                             <SwiperSlide><Image className="w-full rounded-[15px]" src={image1} alt="image is loading...." /></SwiperSlide>
                             <SwiperSlide><Image className="w-full rounded-[15px]" src={image2} alt="image is loading...." /></SwiperSlide>
@@ -103,6 +143,16 @@ const HeroArea = () => {
                             <SwiperSlide><Image className="w-full rounded-[15px]" src={image4} alt="image is loading...." /></SwiperSlide>
                             <SwiperSlide><Image className="w-full rounded-[15px]" src={image1} alt="image is loading...." /></SwiperSlide>
                         </Swiper>
+                        </div>
+                        <div className="scroll-container 2xl:block hidden">
+                        <div className="scroll-content">
+                            {[...images, ...images].map((image, index) => (
+                            <div key={index} className="flex flex-col items-center w-[295px]">
+                                <Image src={image.src} alt={image.caption} />
+                            </div>
+                            ))}
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>

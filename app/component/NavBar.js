@@ -61,7 +61,7 @@ const NavBar = () => {
     return (
         <div className={` header ${scrolled ? "scrolled" : ""}  w-full`}>
             
-            <header className={` roundermine container mx-auto flex justify-between items-center py-[18px] sm:py-[24px] relative px-[24px] sm:px-0`}>
+            <header className={` roundermine container mx-auto flex justify-between items-center py-[10px] sm:py-[14px] relative px-[24px] sm:px-0`}>
                 <div className='sm:hidden relative top-[-11px]'>
                     <div 
                         className={`transition-transform duration-300 ease-in-out ${toggle ? 'opacity-100' : 'opacity-0 -translate-x-2'}`}
@@ -80,26 +80,20 @@ const NavBar = () => {
                     <a className="Link-manu-bar" href="#HowItWorks" onClick={(e) => handleScroll(e, "HowItWorks")}>
                         How it works
                     </a>
+                    <a className="Link-manu-bar" href="#Account" onClick={(e) => handleScroll(e, "Account")}>
+                        Account
+                    </a>
                     <a className="Link-manu-bar" href="#About" onClick={(e) => handleScroll(e, "About")}>
                         About
                     </a>
-                    <a className="Link-manu-bar" href="#Competitions" onClick={(e) => handleScroll(e, "Competitions")}>
-                        Competitions
-                    </a>
-                    <a className="Link-manu-bar" href="#Payouts" onClick={(e) => handleScroll(e, "Payouts")}>
-                        Payouts
+                    <a className="Link-manu-bar" href="#FAQ" onClick={(e) => handleScroll(e, "FAQ")}>
+                        FAQ
                     </a>
                 </nav>
                 <nav ref={menuRef} className={`navbar-items-main absolute sm:top-0 top-[100%] sm:right-0 sm:relative duration-1000 z-50 sm:opacity-100 flex justify-between items-start sm:items-center gap-[20px] md:gap-[25px] lg:gap-[30px] xl:gap-[35px] 2xl:gap-[40px] p-[8px] md:p-[12px] xl:p-[16px] sm:bg-transparent bg-[#000] sm:flex-row flex-col p-[20px] sm:p-[0]
                     ${toggle ? 'right-[10]' :'right-[130%]' }
                     ${toggle ? 'opacity-100' : 'opacity-10'} 
                     `} >
-                    <a className="Link-manu-bar" href="#Accounts" onClick={(e) => handleScroll(e, "Accounts")}>
-                        Accounts
-                    </a>
-                    <a className="Link-manu-bar" href="#FAQ" onClick={(e) => handleScroll(e, "FAQ")}>
-                        FAQ
-                    </a>
                     <a className="Link-manu-bar" href="#Contact" onClick={(e) => handleScroll(e, "Contact")}>
                         Contact
                     </a>
